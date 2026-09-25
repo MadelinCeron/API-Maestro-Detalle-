@@ -238,6 +238,8 @@ app.post('/api/registro', async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('Servidor activo en http://localhost:3000');
+const puerto = Number(process.env.PORT || 3000);
+
+app.listen(puerto, '0.0.0.0', () => {
+  console.log(`Servidor activo en el puerto ${puerto}`);
 });

@@ -7,7 +7,7 @@
   "detalle": [
     { "misionId": 1, "estado": true },
     { "misionId": 2, "estado": true },
-    { "misionId": 3, "estado": false },
+    { "misionId": 3, "estado": true },
     { "misionId": 4, "estado": false },
     { "misionId": 5, "estado": false }
   ]

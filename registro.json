@@ -1,0 +1,14 @@
+{
+  "maestro": {
+    "carnet": "1890-23-16776",
+    "nombre": "Madelin Jazmin Ceron Molina",
+    "correo": "mceronm@miumg.edu.gt"
+  },
+  "detalle": [
+    { "misionId": 1, "estado": true },
+    { "misionId": 2, "estado": true },
+    { "misionId": 3, "estado": false },
+    { "misionId": 4, "estado": false },
+    { "misionId": 5, "estado": false }
+  ]
+}

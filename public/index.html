@@ -3,14 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablero de misiones</title>
+  <meta name="theme-color" content="#183b68">
+  <title>Tablero de misiones | UMG</title>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
 </head>
 <body>
-  <h1>Tablero de misiones</h1>
-  <p>Avance de los estudiantes</p>
+  <header class="encabezado">
+    <div class="contenedor">
+      <span class="etiqueta">RETO WEB · UMG</span>
+      <h1>Tablero de misiones</h1>
+      <p>Seguimiento del avance en la API Maestro-Detalle</p>
+    </div>
+  </header>
 
-  <div id="estudiantes">Cargando estudiantes...</div>
-  <script src="/app.js"></script>
+  <main class="contenedor">
+    <section class="resumen" aria-label="Resumen general">
+      <div class="dato">
+        <span>Estudiantes</span>
+        <strong id="total-estudiantes">—</strong>
+      </div>
+      <div class="dato">
+        <span>Misiones del reto</span>
+        <strong id="total-misiones">—</strong>
+      </div>
+      <div class="dato">
+        <span>Avance promedio</span>
+        <strong id="promedio">—</strong>
+      </div>
+    </section>
+
+    <section class="seccion-alumnos">
+      <div class="titulo-seccion">
+        <div>
+          <span class="etiqueta etiqueta-oscura">PARTICIPANTES</span>
+          <h2>Avance por estudiante</h2>
+        </div>
+
+        <label class="buscador">
+          <span class="sr-only">Buscar por nombre o carnet</span>
+          <input
+            id="buscar"
+            type="search"
+            placeholder="Buscar nombre o carnet"
+            autocomplete="off"
+          >
+        </label>
+      </div>
+
+      <p id="resultado-busqueda" class="resultado-busqueda" aria-live="polite"></p>
+      <div id="estudiantes" class="tarjetas" aria-live="polite">
+        Cargando estudiantes...
+      </div>
+    </section>
+  </main>
 </body>
 </html>
